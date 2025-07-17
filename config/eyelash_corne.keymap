@@ -85,7 +85,7 @@
             bindings = <
 &kp TAB                    &kp Q            &kp W  &kp E     &kp R          &kp T                                &mmv MOVE_UP                     &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &QHT LEFT_CONTROL LS(TAB)  &LHT LEFT_ALT A  &kp S  &kp D     &kp F          &kp G                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT             &kp Z            &kp X  &kp C     &kp V          &kp B  &kp K_MUTE                    &mmv MOVE_DOWN                   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &QHT RIGHT_SHIFT ENTER
+&kp LEFT_SHIFT             &kp Z            &kp X  &kp C     &kp V          &kp B  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &QHT RIGHT_SHIFT ENTER
                                                    &kp LGUI  &QLHT 2 SPACE  &mo 3                                                                 &kp SPACE  &mo 1  &kp RALT
             >;
 
@@ -119,10 +119,10 @@
         Func {
             display-name = "Func";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4      &kp F5            &kp F6                    &trans          &kp F7  &kp F8         &kp F9        &kp F10           &kp F11  &kp F12
-&trans  &trans  &trans  &kp LG(N5)  &kp LG(NUMBER_4)  &trans            &trans  &trans  &trans  &trans  &kp RG(MINUS)  &kp RG(PLUS)  &kp RG(NUMBER_0)  &trans   &trans
-&trans  &trans  &trans  &trans      &trans            &trans  &trans            &trans          &trans  &trans         &trans        &trans            &trans   &trans
-                        &trans      &trans            &trans                                    &trans  &trans         &trans
+&kp F1  &kp F2  &kp F3  &kp F4          &kp F5                &kp F6                    &trans          &kp F7  &kp F8         &kp F9        &kp F10           &kp F11  &kp F12
+&trans  &trans  &trans  &kp LG(LS(N5))  &kp LG(LS(NUMBER_4))  &trans            &trans  &trans  &trans  &trans  &kp RG(MINUS)  &kp RG(PLUS)  &kp RG(NUMBER_0)  &trans   &trans
+&trans  &trans  &trans  &trans          &trans                &trans  &trans            &trans          &trans  &trans         &trans        &trans            &trans   &trans
+                        &trans          &trans                &trans                                    &trans  &trans         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
